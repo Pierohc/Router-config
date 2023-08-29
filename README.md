@@ -2,7 +2,7 @@ Mostrar la configuracion guardada:
     
     show running-config  
 
-CCopiar una configuración al archivo de inicio:
+Copiar una configuración al archivo de inicio:
     
     copy running-config startup-config
 
