@@ -18,7 +18,7 @@ Borra ip de una interfaz:
 
 -----------------------------
 
-RIP:
+# RIP:
 
     R1(config)#router rip
 
@@ -40,3 +40,7 @@ Borrar configuracion rip:
 Tabla de enrutamiento:
 
     show ip route
+
+Para que no sumarice:
+
+    R1(config)#no auto-sumary
