@@ -44,3 +44,30 @@ Tabla de enrutamiento:
 Para que no sumarice:
 
     R1(config)#no auto-sumary
+
+
+------------------------------
+
+# OSPF:
+
+Para virtual links:
+
+    #show ip protocols
+Ubico el Router ID a.b.c.d
+
+    #conf t
+    #router opsf 1
+    #router-id a.b.c.d
+    #end
+
+Actualizamos:
+
+    #clear ip ospf process
+    #...yes
+
+Ahora si configuramos virtual link:
+
+    #router ospf 1
+    #area puente virtual-link (router id del otro router al extremo del area comun o puente)
+
+
